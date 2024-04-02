@@ -51,7 +51,7 @@ const Footer = () => (
             8:00 am - 12:00 am
           </p>
           <p className='p__opensans'>
-            Saturday - Sunday
+            Saturday - Sunday:
           </p>
           <p className='p__opensans'>
             7:00 am - 11:00 pm
