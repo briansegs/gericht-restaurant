@@ -1,0 +1,21 @@
+.app__returntotop {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 2;
+
+    border-radius: 5px;
+}
+
+.app__returntotop_arrow-icon {
+    background: var(--color-black);
+    color: var(--color-gray);
+    font-size: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app__returntotop_arrow-icon:hover {
+    color: var(--color-golden);
+}
