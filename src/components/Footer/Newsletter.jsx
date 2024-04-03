@@ -11,7 +11,7 @@ const Newsletter = () => (
         Subscribe To Our Newsletter
       </h1>
       <p className='p__opensans'>
-        And Never Miss Latest Updates
+        And Never Miss The Latest Updates
       </p>
     </div>
 
