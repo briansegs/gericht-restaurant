@@ -6,8 +6,43 @@ import images from '../../constants/images';
 
 import './Navbar.css';
 
+const liData = [
+  {
+    route: '#home',
+    text: 'Home'
+  },
+  {
+    route: '#about',
+    text: 'About'
+  },
+  {
+    route: '#menu',
+    text: 'Menu'
+  },
+  {
+    route: '#awards',
+    text: 'Awards'
+  },
+  {
+    route: '#contact',
+    text: 'Contact'
+  }
+];
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const Links = ({navData: { route, text }}) => (
+    <li className='p__opensans'><a href={route}>{text}</a></li>
+  )
+
+  const SmallLinks = ({navData: { route, text }}) => (
+    <li className='p__opensans' onClick={() => setToggleMenu(false)}>
+      <a href={route}>
+        {text}
+      </a>
+    </li>
+  )
 
   return (
     <nav className='app__navbar'>
@@ -15,11 +50,9 @@ const Navbar = () => {
         <img src={images.gericht} alt="app logo" />
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__opensans'><a href="#home">Home</a></li>
-        <li className='p__opensans'><a href="#about">About</a></li>
-        <li className='p__opensans'><a href="#menu">Menu</a></li>
-        <li className='p__opensans'><a href="#awards">Awards</a></li>
-        <li className='p__opensans'><a href="#contact">Contact</a></li>
+        {liData.map((data) =>
+          <Links navData={data} />
+        )}
       </ul>
       <div className="app__navbar-login">
         <a href="#login" className='p__opensans'>
@@ -45,35 +78,13 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)} 
             />
             <ul className='app__navbar-smallscreen_links'>
-              <li className='p__opensans'>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
-                  Home
-                </a>
-              </li>
-              <li className='p__opensans'>
-                <a href="#about" onClick={() => setToggleMenu(false)}>
-                  About
-                </a>
-              </li>
-              <li className='p__opensans'>
-                <a href="#menu" onClick={() => setToggleMenu(false)}>
-                  Menu
-                </a>
-              </li>
-              <li className='p__opensans'>
-                <a href="#awards" onClick={() => setToggleMenu(false)}>
-                  Awards
-                </a>
-              </li>
-              <li className='p__opensans'>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact
-                </a>
-              </li>
+              {liData.map((data) =>
+                <SmallLinks navData={data} />
+              )}
             </ul>
           </div>
         )}
-
+        
       </div>
     </nav>
   )
