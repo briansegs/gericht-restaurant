@@ -3,8 +3,8 @@ import { BsArrowUpSquare } from 'react-icons/bs';
 
 import './ReturnToTop.css';
 
-const ArrowBtn = () => (
-    <div className='app__returntotop'>
+const ArrowBtn = (props) => (
+    <div className={props.class}>
         <a href="#home">
             <BsArrowUpSquare 
                 className='app__returntotop_arrow-icon' 
@@ -29,32 +29,14 @@ const ReturnToTop = () => {
         };
     }, []);
 
-    const [widthPosition, setWidthPosition] = useState(0);
-
-    const handleResize = () => {
-        const width = window.innerWidth;
-        setWidthPosition(width);    
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize, { passive: true });
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
     return (
         <>
-        {(scrollPosition > 150 && 
-            widthPosition > 1150) && (
-                <ArrowBtn />
+        {(scrollPosition > 150 ) && (
+                <ArrowBtn class='app__returntotop btn1' />
         )}
 
-        {(scrollPosition > 1000 && 
-            widthPosition < 1150 && 
-            widthPosition > 900) && (
-                <ArrowBtn />
+        {(scrollPosition > 1000) && (
+                <ArrowBtn class='app__returntotop btn2' />
         )}
         </>
     )

@@ -19,3 +19,21 @@
 .app__returntotop_arrow-icon:hover {
     color: var(--color-golden);
 }
+
+@media screen and (max-width: 1150px) {
+    .btn1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .btn2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .btn2 {
+        display: none;
+    }
+}
