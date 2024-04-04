@@ -59,7 +59,7 @@ const Navbar = () => {
           Log in / Register
         </a>
         <div />
-        <a href="/" className='p__opensans'>
+        <a href="#home" className='p__opensans'>
           Book Table
         </a>
       </div>
