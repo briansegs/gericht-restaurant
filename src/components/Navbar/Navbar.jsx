@@ -31,17 +31,45 @@ const Navbar = () => {
         </a>
       </div>
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu 
+          color='#fff' 
+          fontSize={27} 
+          onClick={() => setToggleMenu(true)} 
+        />
         
         {toggleMenu && (
           <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-            <MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)} />
+            <MdOutlineRestaurantMenu 
+              fontSize={27} 
+              className='overlay__close' 
+              onClick={() => setToggleMenu(false)} 
+            />
             <ul className='app__navbar-smallscreen_links'>
-              <li className='p__opensans'><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li className='p__opensans'><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
-              <li className='p__opensans'><a href="#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li className='p__opensans'><a href="#awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
-              <li className='p__opensans'><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <li className='p__opensans'>
+                <a href="#home" onClick={() => setToggleMenu(false)}>
+                  Home
+                </a>
+              </li>
+              <li className='p__opensans'>
+                <a href="#about" onClick={() => setToggleMenu(false)}>
+                  About
+                </a>
+              </li>
+              <li className='p__opensans'>
+                <a href="#menu" onClick={() => setToggleMenu(false)}>
+                  Menu
+                </a>
+              </li>
+              <li className='p__opensans'>
+                <a href="#awards" onClick={() => setToggleMenu(false)}>
+                  Awards
+                </a>
+              </li>
+              <li className='p__opensans'>
+                <a href="#contact" onClick={() => setToggleMenu(false)}>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         )}
