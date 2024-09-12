@@ -7,10 +7,10 @@ View the site [here](https://briansegs.github.io/gericht-restaurant/)
 ## Table of contents
 - [About the app](#about-the-app)
 - [Technologies](#technologies)
-- [Setup](setup)
-- [Approach](approach)
-- [Status](status)
-- [Credits](credits)
+- [Setup](#setup)
+- [Approach](#approach)
+- [Status](#status)
+- [Credits](#credits)
 
 ## About the app:
 I wanted to learn how to transform a Figma design into a fully functioning website, improve my CSS skills, and create a modern and responsive React.js website so I built this website. I learn best by first studying the material and then doing a few projects to work out what I learned. 
