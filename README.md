@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Gericht Restaurant - A Modern UI/UX Restaurant Website
+![site image](https://github.com/briansegs/portfolio-03/blob/main/assets/projects/project4.png)
 
+### Demo:
+View the site [here](https://briansegs.github.io/gericht-restaurant/)
+
+## Table of contents
+- [About the app](#about-the-app)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
+- [Status](#status)
+- [Credits](#credits)
+
+## About the app:
+I wanted to learn how to transform a Figma design into a fully functioning website, improve my CSS skills, and create a modern and responsive React.js website so I built this website. I learn best by first studying the material and then doing a few projects to work out what I learned. 
+
+### The skills I learned after completing this project:
+- React functional components and their reusability
+- React file and folder structure
+- Fundamental CSS properties to improve my flex & grid skills
+- Fundamentals of the CSS BEM Model
+- Animations and gradients
+- Media queries for satisfactory responsiveness covering almost all devices
+
+## Technologies:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Setup:
+Clone the project and enter its root directory.
 
-In the project directory, you can run:
+Install **Node.js** -> [Instructions](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+
+### `npm i`
+Installs all of the project's dependencies.
 
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Approach:
+After finding the design I created a basic React app and set up the file structure. Next, I added some basic styles to my CSS file that I knew I would be resuing. After that, I built each section in the order that they appear on the website, tweaking their responsiveness as I went. Lastly, I added features like a return-to-top button and final touches like gradients that weren't in the original design. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Status:
+This project is finished.
 
-### `npm run build`
+## Credits:
+[Figma file](https://www.figma.com/design/yvClSI9AZBRX8UaaGEByF3/Modern-UI%2FUX%3A-Gericht?node-id=53-2&node-type=canvas&t=4JLmXwdIeUoF0Fq6-0) - 
+[Creator of the design](https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma) - 
+[BEM educational link](https://sparkbox.com/foundry/bem_by_example)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
