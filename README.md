@@ -1,5 +1,5 @@
 # Gericht Restaurant - A Modern UI/UX Restaurant Website
-![site image](https://github.com/briansegs/portfolio-03/blob/main/assets/projects/project4.png)
+![site image](https://github.com/briansegs/gericht-restaurant/blob/main/src/assets/project4.png)
 
 ### Demo:
 View the site [here](https://briansegs.github.io/gericht-restaurant/)
